@@ -1,0 +1,2 @@
+rootProject.name = "SensorDataCollection11"
+include ':app'

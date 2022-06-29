@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Spinner
+            android:id="@+id/letterSpinner"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="27dp"
+            android:entries="@array/letter"
+            android:weightSum="1" />
+
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:weightSum="1"
+            tools:entries="@array/subject" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="27dp"
+            android:text="@string/start"
+            android:textColor="@android:color/white"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="149dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/stop"
+            tools:ignore="ButtonStyle" />
+
+    </LinearLayout>
+</RelativeLayout>
